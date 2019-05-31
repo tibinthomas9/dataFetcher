@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		040B5E39228AE092002F1AF0 /* dataFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 040B5E37228AE092002F1AF0 /* dataFetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0428ECC9229658B80087F40B /* dataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0428ECC8229658B80087F40B /* dataFetcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		040B5E34228AE092002F1AF0 /* dataFetcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = dataFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		040B5E37228AE092002F1AF0 /* dataFetcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dataFetcher.h; sourceTree = "<group>"; };
 		040B5E38228AE092002F1AF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0428ECC8229658B80087F40B /* dataFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dataFetcher.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				040B5E37228AE092002F1AF0 /* dataFetcher.h */,
+				0428ECC8229658B80087F40B /* dataFetcher.swift */,
 				040B5E38228AE092002F1AF0 /* Info.plist */,
 			);
 			path = dataFetcher;
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					040B5E33228AE092002F1AF0 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0428ECC9229658B80087F40B /* dataFetcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 		040B5E3D228AE092002F1AF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -277,6 +283,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tibin.dataFetcher;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +292,7 @@
 		040B5E3E228AE092002F1AF0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;

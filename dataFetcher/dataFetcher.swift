@@ -41,7 +41,7 @@ extension DataFetcher {
 public class ImageRequest {
     let url: URL
     var isCancelled: Bool = false
-    init(url: URL) {
+    public init(url: URL) {
         self.url = url
     }
 }
@@ -53,7 +53,7 @@ extension ImageRequest: DataFetcher {
         return UIImage(data: data)
     }
     
-    func load(withCompletion completion: @escaping (UIImage?) -> Void) {
+  public  func load(withCompletion completion: @escaping (UIImage?) -> Void) {
         fetch(url, withCompletion: completion)
     }
 }
@@ -61,7 +61,7 @@ extension ImageRequest: DataFetcher {
 public class JsonRequest<Model:Codable> {
     let url: URL
     var isCancelled: Bool = false
-    init(url: URL) {
+    public init(url: URL) {
         self.url = url
     }
 }
